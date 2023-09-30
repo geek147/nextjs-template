@@ -1,3 +1,9 @@
+.subscription-page {
+  background-color: white;
+  height: 100vh;
+  color: #000;
+}
+
 .subscription-table {
   overflow-x: auto;
 }
@@ -49,4 +55,12 @@ tbody td {
   color: green;
   padding: 2px;
   border-radius: 1px;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.show {
+  display: block;
 }

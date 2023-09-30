@@ -1,3 +1,4 @@
+/* use client */
 import React from "react";
 import SubscriptionsTable from "../components/SubscriptionTable";
 import Subscription from "../interfaces/Subscription";
@@ -19,7 +20,7 @@ const MySubscription = () => {
   ];
 
   return (
-    <div>
+    <div className="subscription-page">
       <h1>My Subscriptions</h1>
       <SubscriptionsTable subscriptions={subscriptions} />
     </div>
