@@ -1,0 +1,50 @@
+.subscription-table {
+  overflow-x: auto;
+}
+
+.subscription-table::-webkit-scrollbar {
+  width: 1px;
+}
+
+.subscription-table::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.subscription-table::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subscription-table::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+thead {
+  border-bottom: 1px solid #000;
+}
+
+thead th {
+  vertical-align: top;
+  min-width: 100px;
+  text-align: left;
+}
+
+tbody td {
+  vertical-align: top;
+  min-width: 100px;
+}
+
+.active {
+  background-color: rgb(176, 255, 97);
+  border: green solid 1px;
+  color: green;
+  padding: 2px;
+  border-radius: 1px;
+}
+
+.inactive {
+  background-color: rgba(187, 51, 79, 0.547);
+  border: red solid 1px;
+  color: red;
+  padding: 2px;
+}
