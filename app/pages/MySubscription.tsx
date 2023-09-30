@@ -14,6 +14,7 @@ const MySubscription = () => {
       trialSubscriptionEndDate: "2023-09-15",
       nextPaymentDueDate: "2023-10-01",
       nextPaymentAmount: "$19.99",
+      emailAddress: "jkpordje@gmail.com",
     },
   ];
 

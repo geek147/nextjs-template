@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { Props } from "../interfaces/Props";
+import Props from "../interfaces/Props";
 import "../styles/subscription.css";
 
 const SubscriptionsTable: FC<Props> = (props) => {
@@ -11,7 +11,7 @@ const SubscriptionsTable: FC<Props> = (props) => {
     setIsDropdownVisible(!isDropdownVisible);
   };
 
-  function getStatusStyle(status) {
+  function getStatusStyle(status: string) {
     switch (status) {
       case "Active":
         return "active";

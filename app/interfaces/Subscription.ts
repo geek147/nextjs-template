@@ -9,4 +9,5 @@ export default interface Subscription {
   trialSubscriptionEndDate: string;
   nextPaymentDueDate: string;
   nextPaymentAmount: string;
+  emailAddress: string;
 }
