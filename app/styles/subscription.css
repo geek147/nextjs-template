@@ -64,3 +64,9 @@ tbody td {
 .show {
   display: block;
 }
+
+.actions {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
