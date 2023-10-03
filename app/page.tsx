@@ -7,6 +7,7 @@ import "./styles/style.css";
 import mixpanel from "../config/mixpanel";
 
 import CookieBanner from "./components/CookiesBanner";
+import Link from "next/link";
 
 const FetchWebsite = ({ url }: { url: string }) => {
   const [hasError, setHasError] = useState(false);
@@ -77,6 +78,7 @@ const Home = () => {
         <div>{url && <FetchWebsite url={url} />}</div>
       </div>
       <CookieBanner />
+      <Link href="/mySubscription">Go to subscription page</Link>
     </>
   );
 };
