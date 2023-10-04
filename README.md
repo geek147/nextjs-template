@@ -2,12 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+create a .env file from the .env.template file (OPTIONAL: modify as desired for your local situation)
+
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 # or
 pnpm dev
 ```
@@ -49,3 +49,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+# Setting Up WebKit with Playwright
+
+This guide will help you set up WebKit with Playwright for testing and automating web applications using the WebKit browser engine.
+
+## Prerequisites
+
+Before getting started, make sure you have the following prerequisites installed:
+
+- Node.js: [Download and install Node.js](https://nodejs.org/)
+
+## Installation
+
+1. Create a new Node.js project or navigate to your existing project directory.
+
+2. Install Playwright and WebKit dependencies by running the following command:
+
+   ```bash
+   npm install playwright
+3. Install WebKit by running the following command
+   npx playwright install webkit
+4. For more reference 
+   https://www.youtube.com/watch?v=W3IH7zDR_HQ
