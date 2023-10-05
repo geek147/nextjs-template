@@ -74,3 +74,22 @@ Before getting started, make sure you have the following prerequisites installed
    npx playwright install webkit
 4. For more reference 
    https://www.youtube.com/watch?v=W3IH7zDR_HQ
+
+
+### Firestore Setup
+
+Follow these steps to set up Firestore in your project:
+
+1. Create a Firebase project and obtain your Firebase configuration.
+
+2. Update the Firebase configuration in `firebaseConfig.js`.
+   
+3. Install Firebase by running the following command:
+```bash
+npm install firebase
+```
+
+4. Install Firebase Tools by running the following command:
+```bash
+npm install -g firebase-tools
+```
