@@ -93,3 +93,7 @@ npm install firebase
 ```bash
 npm install -g firebase-tools
 ```
+
+### Usefull Resources
+
+https://blog.sentry.io/common-errors-in-next-js-and-how-to-resolve-them/ 
