@@ -8,6 +8,7 @@ import mixpanel from "../config/mixpanel";
 
 import CookieBanner from "./components/CookiesBanner";
 import Link from "next/link";
+import logger from "@/config/pino-config";
 
 const FetchWebsite = ({ url }: { url: string }) => {
   const [hasError, setHasError] = useState(false);
@@ -21,6 +22,7 @@ const FetchWebsite = ({ url }: { url: string }) => {
      */
     const trackWebsiteFetch = (url: string) => {
       mixpanel.track("Website Fetched", { url });
+      logger.info("Website Fetched ", url)
     };
 
     const getSiteAvailability = async () => {
@@ -32,6 +34,7 @@ const FetchWebsite = ({ url }: { url: string }) => {
         trackWebsiteFetch(url);
       } catch (err) {
         setHasError(true);
+        logger.error(err);
       }
     };
 
