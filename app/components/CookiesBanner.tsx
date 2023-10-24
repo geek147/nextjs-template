@@ -5,8 +5,7 @@ import logger from "@/logger";
 const CookieBanner = () => {
   const handleAccept = () => {
     Cookies.set("Cookies", "accepted", { expires: 365 });
-    logger.info("cookies accepted")
-    console.log("cookies accepted");
+    logger.info("cookies accepted");
   };
   return (
     <CookieConsent
