@@ -8,6 +8,7 @@ import mixpanel from "../config/mixpanel";
 
 import CookieBanner from "./components/CookiesBanner";
 import Link from "next/link";
+import {populateFirestoreWithDummyData} from "@/lib/filebase/populateFirestore"
 
 const FetchWebsite = ({ url }: { url: string }) => {
   const [hasError, setHasError] = useState(false);
@@ -27,6 +28,7 @@ const FetchWebsite = ({ url }: { url: string }) => {
       try {
         await fetch(url, { mode: "no-cors", signal: abortController.signal });
         setHasError(false);
+        populateFirestoreWithDummyData();
 
         // Track website fetch event
         trackWebsiteFetch(url);

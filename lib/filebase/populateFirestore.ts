@@ -2,7 +2,7 @@ import { getFirestore, collection, addDoc } from "firebase/firestore";
 import app from "./firebaseConfig";
 import Subscription from "@/app/interfaces/Subscription";
 
-async function populateFirestoreWithDummyData() {
+export async function populateFirestoreWithDummyData() {
   const db = getFirestore(app);
 
   const dummySubscriptions: Subscription[] = [
