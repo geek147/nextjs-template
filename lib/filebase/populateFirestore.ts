@@ -1,6 +1,7 @@
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import app from "./firebaseConfig";
 import Subscription from "@/app/interfaces/Subscription";
+import logger from "@/logger";
 
 async function populateFirestoreWithDummyData() {
   const db = getFirestore(app);
@@ -96,7 +97,7 @@ async function populateFirestoreWithDummyData() {
     await addDoc(collection(db, "subscriptions"), subscription);
   }
 
-  console.log("Dummy data added to Firestore");
+  logger.info("Dummy data added to firebase")
 }
 
 export default populateFirestoreWithDummyData();
