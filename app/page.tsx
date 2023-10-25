@@ -1,13 +1,12 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import firebase from "@/lib/filebase/firebaseConfig";
 import "./styles/style.css";
 import mixpanel from "../config/mixpanel";
 
 import CookieBanner from "./components/CookiesBanner";
 import Link from "next/link";
-firebase
+
 const FetchWebsite = ({ url }: { url: string }) => {
   const [hasError, setHasError] = useState(false);
 
