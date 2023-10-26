@@ -1,9 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-
 import "./styles/style.css";
-
 import mixpanel from "../config/mixpanel";
 
 import CookieBanner from "./components/CookiesBanner";
