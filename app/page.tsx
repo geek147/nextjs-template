@@ -28,7 +28,6 @@ const FetchWebsite = ({ url }: { url: string }) => {
       try {
         await fetch(url, { mode: "no-cors", signal: abortController.signal });
         setHasError(false);
-        populateFirestoreWithDummyData();
 
         // Track website fetch event
         trackWebsiteFetch(url);
