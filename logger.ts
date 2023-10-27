@@ -1,9 +1,7 @@
 import pino from "pino";
 
-const currentLevel = process.env.LOG_LEVEL || 'info';
-
 const logger = pino({
-    level: currentLevel
+  level: process.env.PINO_LOG_LEVEL || "info",
 });
 
 export default logger;
