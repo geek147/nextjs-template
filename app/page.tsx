@@ -8,7 +8,6 @@ import mixpanel from "../config/mixpanel";
 
 import CookieBanner from "./components/CookiesBanner";
 import Link from "next/link";
-import {populateFirestoreWithDummyData} from "@/lib/filebase/populateFirestore"
 
 const FetchWebsite = ({ url }: { url: string }) => {
   const [hasError, setHasError] = useState(false);
